@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.faq .text {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.faq .text > div {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.faq details div {
+    border-left: 3px solid #49496E;
+    border-right: 3px solid #49496E;
+    border-bottom: 3px solid #49496E;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.faq summary {
+    list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq summary {
+    border: 3px solid #49496E;
+    border-radius: 10px;
+    padding: 15px 10px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 55px;
+}
+
+.faq summary:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    content: "↓";
+    width: 25px;
+    height: 25px;
+    background-color: #49496E;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.faq details[open] summary {
+    background-color: #E8EAED;
+}
+
+.faq details[open] summary:before {
+    content: "↑";
+}
+
+.faq summary:hover {
+    background-color: #E8EAED;
+}
+
+

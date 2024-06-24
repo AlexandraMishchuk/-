@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contacts .form {
+    width: 30%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="url"], textarea, button[type="submit"] {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contacts .contact {
+    padding: 25px;
+    margin-top: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.contacts .form p {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 90px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contacts fieldset {
+    border: medium;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="url"], textarea {
+    width: 100%;
+    border: 1px solid #616194;
+    background: #F3F3F7;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+.contacts textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+.contacts button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #46495F;
+    color: white;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.contacts button:hover {
+    background: #595988;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contacts .call p {
+    font-size: 30px;
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 100px;
+}
+
+.contacts .call p.small_text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: 100px;
+}
+
+.contacts .call .contact_img {
+    margin-left: 100px;
+}
+
+

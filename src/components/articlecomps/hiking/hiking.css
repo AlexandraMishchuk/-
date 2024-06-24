@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+    --surface-color: white;
+    --curve: 10;
+}
+
+.hiking {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+}
+
+.hiking .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 80px;
+    margin: 40px 60px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.hiking .card {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.hiking .card_image {
+    width: 100%;
+    /*height: 60%;*/
+}
+
+.hiking .card_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateY(100%);
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover .card_overlay {
+    transform: translateY(0);
+}
+
+.hiking .card_header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /*gap: 2em;*/
+    padding: 20px;
+    border-radius: 10px 0 0 0;
+    background-color: white;
+    transform: translateY(-100%);
+    transition: 0.2s ease-in-out;
+}
+
+.hiking .card:hover .card_header {
+    transform: translateY(0);
+}
+
+.hiking .card_title {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #212131;
+}
+
+.hiking .card_status {
+    font-size: 15px;
+    color: #46495F;
+    margin: 10px;
+}
+
+.hiking button {
+    color: #212131;
+    text-decoration: none;
+    border: 2px solid #212131;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.hiking .card_description {
+    padding: 0 10px 10px;
+    margin: 0;
+    color: #212131;
+    font-size: 17px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.home {
+    padding: 3.67em;
+    font-family: "Montserrat", sans-serif;
+    color: #ECE8ED;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../../../pics/bg_home.jpg");
+    background-size: cover;
+}
+
+.home .title {
+    max-width: 70%;
+    margin-top: 100px;
+    margin-left: 60px;
+    font-size: 70px;
+}
+
+.home p {
+    margin-left: 60px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.home footer {
+    margin-bottom: 200px;
+    margin-left: 60px;
+    margin-top: 35px;
+}
+
+.home .button1 {
+    padding: 0.5em 0.67em;
+    color: #ECE8ED;
+    text-decoration: none;
+    border: 0.1em solid #ECE8ED;
+    border-radius: 10px;
+
+}
+
+.home .button2 {
+    color: black;
+    padding: 0.5em 0.67em;
+    text-decoration: none;
+    background-color: #ECE8ED;
+    border-radius: 10px;
+    margin-left: 20px;
+}
